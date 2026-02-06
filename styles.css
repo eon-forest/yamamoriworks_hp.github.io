@@ -403,7 +403,7 @@ a {
 }
 
 .video-message-content {
-  max-width: 900px;
+  max-width: 400px;
   margin: 0 auto;
 }
 
@@ -416,6 +416,11 @@ a {
   border-radius: 16px;
   box-shadow: var(--shadow-lg);
   margin-bottom: 2rem;
+}
+
+/* 縦型動画（9:16）用 */
+.video-wrapper-vertical {
+  padding-bottom: 177.78%;
 }
 
 .video-wrapper iframe {
@@ -1013,6 +1018,10 @@ a {
 
   .video-message-section {
     padding: 4rem 0;
+  }
+
+  .video-message-content {
+    max-width: 300px;
   }
 
   .video-speaker-name {
