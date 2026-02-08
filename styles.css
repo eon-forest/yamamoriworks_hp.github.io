@@ -458,6 +458,14 @@ a {
   margin-top: 0.25rem;
 }
 
+.video-speaker-title {
+  font-size: 0.85rem;
+  color: var(--color-moss-green);
+  font-weight: 500;
+  margin-top: 0.75rem;
+  letter-spacing: 0.05em;
+}
+
 /* ========================================== */
 /* Message Section (Legacy) */
 /* ========================================== */
@@ -726,6 +734,24 @@ a {
 
 .function-image-overlay p {
   font-weight: 600;
+  font-size: 1rem;
+}
+
+.function-image-link {
+  display: block;
+}
+
+.overlay-link-text {
+  display: flex;
+  align-items: center;
+  gap: 0.25rem;
+  font-size: 0.85rem;
+  font-weight: 500;
+  margin-top: 0.5rem;
+  opacity: 0.9;
+}
+
+.overlay-link-text .material-icons {
   font-size: 1rem;
 }
 
