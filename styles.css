@@ -193,7 +193,8 @@ a {
   font-weight: 500;
 }
 
-.nav-links a:hover {
+.nav-links a:hover,
+.nav-links a.active {
   color: var(--color-forest-green);
 }
 
@@ -1422,6 +1423,193 @@ a {
 .thanks-actions {
   display: flex;
   justify-content: center;
+}
+
+/* ========================================== */
+/* Activity Page */
+/* ========================================== */
+.activity-header {
+  padding: 10rem 0 4rem;
+  background: var(--color-background-alt);
+  text-align: center;
+}
+
+.activity-intro {
+  font-size: 1.1rem;
+  color: var(--color-text-light);
+  line-height: 2;
+  margin-top: 1.5rem;
+}
+
+.activity-section {
+  padding: 4rem 0 6rem;
+  background: var(--color-background);
+}
+
+.activity-list {
+  display: flex;
+  flex-direction: column;
+  gap: 1.5rem;
+  max-width: 800px;
+  margin: 0 auto;
+}
+
+.activity-item {
+  display: flex;
+  gap: 1.5rem;
+  padding: 1.5rem;
+  background: var(--color-white);
+  border-radius: 12px;
+  box-shadow: var(--shadow-sm);
+  transition: var(--transition);
+}
+
+.activity-item:hover {
+  transform: translateY(-4px);
+  box-shadow: var(--shadow-md);
+}
+
+.activity-date {
+  flex-shrink: 0;
+  width: 80px;
+  text-align: center;
+  padding: 1rem 0.5rem;
+  background: var(--color-forest-green);
+  border-radius: 8px;
+  color: var(--color-white);
+}
+
+.activity-month {
+  display: block;
+  font-size: 0.8rem;
+  font-weight: 500;
+  opacity: 0.9;
+}
+
+.activity-day {
+  display: block;
+  font-size: 1rem;
+  font-weight: 700;
+  margin-top: 0.25rem;
+}
+
+.activity-content {
+  flex: 1;
+}
+
+.activity-status {
+  display: inline-flex;
+  align-items: center;
+  gap: 0.25rem;
+  font-size: 0.8rem;
+  font-weight: 600;
+  padding: 0.25rem 0.75rem;
+  border-radius: 50px;
+  margin-bottom: 0.75rem;
+}
+
+.activity-status .material-icons {
+  font-size: 1rem;
+}
+
+.status-active {
+  background: rgba(93, 122, 77, 0.15);
+  color: var(--color-moss-green);
+}
+
+.status-completed {
+  background: rgba(196, 149, 108, 0.15);
+  color: var(--color-earth-brown);
+}
+
+.activity-title {
+  font-family: var(--font-serif);
+  font-size: 1.25rem;
+  font-weight: 700;
+  color: var(--color-text);
+  margin-bottom: 0.5rem;
+}
+
+.activity-location {
+  display: flex;
+  align-items: center;
+  gap: 0.25rem;
+  font-size: 0.9rem;
+  color: var(--color-text-light);
+  margin-bottom: 0.75rem;
+}
+
+.activity-location .material-icons {
+  font-size: 1rem;
+  color: var(--color-primary);
+}
+
+.activity-description {
+  font-size: 0.95rem;
+  color: var(--color-text-light);
+  line-height: 1.8;
+}
+
+.activity-note {
+  display: flex;
+  gap: 0.75rem;
+  padding: 1rem;
+  background: rgba(93, 122, 77, 0.1);
+  border-radius: 8px;
+  border-left: 3px solid var(--color-moss-green);
+  max-width: 800px;
+  margin: 3rem auto 0;
+}
+
+.activity-note .material-icons {
+  color: var(--color-moss-green);
+  font-size: 1.25rem;
+  flex-shrink: 0;
+}
+
+.activity-note p {
+  font-size: 0.9rem;
+  color: var(--color-text);
+  line-height: 1.7;
+}
+
+.activity-note a {
+  color: var(--color-forest-green);
+  text-decoration: underline;
+}
+
+.activity-note a:hover {
+  color: var(--color-moss-green);
+}
+
+/* Activity Page Responsive */
+@media (max-width: 768px) {
+  .activity-header {
+    padding: 8rem 0 3rem;
+  }
+
+  .activity-intro br {
+    display: none;
+  }
+
+  .activity-item {
+    flex-direction: column;
+    gap: 1rem;
+  }
+
+  .activity-date {
+    width: auto;
+    display: flex;
+    gap: 0.5rem;
+    padding: 0.5rem 1rem;
+    justify-content: center;
+  }
+
+  .activity-month,
+  .activity-day {
+    display: inline;
+    margin: 0;
+  }
 }
 
 /* Contact Page Responsive */

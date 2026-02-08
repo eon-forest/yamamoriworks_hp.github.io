@@ -3,8 +3,8 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>送信完了 | 合同会社 山守ワークス</title>
-  <meta name="description" content="お問い合わせありがとうございます。">
+  <title>稼働状況 | 合同会社 山守ワークス</title>
+  <meta name="description" content="合同会社 山守ワークスの直近の稼働状況をお知らせします。森林整備・造林作業の進捗をご確認いただけます。">
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link href="https://fonts.googleapis.com/css2?family=Noto+Serif+JP:wght@300;400;600;700&family=Zen+Kaku+Gothic+New:wght@300;400;500;700&display=swap" rel="stylesheet">
@@ -24,7 +24,7 @@
       <div class="nav-links">
         <a href="index.html#about">私たちについて</a>
         <a href="https://gold910478.studio.site" target="_blank" rel="noopener noreferrer">事業内容</a>
-        <a href="activity.html">稼働状況</a>
+        <a href="activity.html" class="active">稼働状況</a>
         <a href="contact.html" class="nav-cta">お問い合わせ</a>
       </div>
       <button class="nav-menu-btn">
@@ -33,21 +33,74 @@
     </div>
   </nav>
 
-  <!-- Thanks Section -->
-  <section class="thanks-section">
+  <!-- Activity Header -->
+  <section class="activity-header">
     <div class="container">
-      <div class="thanks-content">
-        <div class="thanks-icon">
-          <span class="material-icons">check_circle</span>
-        </div>
-        <h1 class="thanks-title">送信が完了しました</h1>
-        <p class="thanks-message">
-          お問い合わせいただきありがとうございます。<br>
-          内容を確認の上、3営業日以内にご返信いたします。
-        </p>
-        <div class="thanks-actions">
-          <a href="index.html" class="btn btn-primary">トップページへ戻る</a>
-        </div>
+      <div class="section-header center">
+        <span class="section-label">Activity</span>
+        <h1 class="section-title">稼働状況</h1>
+      </div>
+      <p class="activity-intro">
+        山守ワークスの直近の稼働状況をお知らせします。<br>
+        森林整備・造林作業の進捗をご確認いただけます。
+      </p>
+    </div>
+  </section>
+
+  <!-- Activity List Section -->
+  <section class="activity-section">
+    <div class="container">
+      <div class="activity-list">
+
+        <!-- Activity Item Example -->
+        <article class="activity-item">
+          <div class="activity-date">
+            <span class="activity-month">2025</span>
+            <span class="activity-day">1月〜</span>
+          </div>
+          <div class="activity-content">
+            <div class="activity-status status-active">
+              <span class="material-icons">play_circle</span>
+              稼働中
+            </div>
+            <h3 class="activity-title">造林作業</h3>
+            <p class="activity-location">
+              <span class="material-icons">location_on</span>
+              長野県内
+            </p>
+            <p class="activity-description">
+              冬季の造林作業を実施中です。下刈り・間伐作業を中心に進めています。
+            </p>
+          </div>
+        </article>
+
+        <!-- More Activity Items can be added here -->
+        <article class="activity-item">
+          <div class="activity-date">
+            <span class="activity-month">2024</span>
+            <span class="activity-day">通年</span>
+          </div>
+          <div class="activity-content">
+            <div class="activity-status status-completed">
+              <span class="material-icons">check_circle</span>
+              完了
+            </div>
+            <h3 class="activity-title">森林経営計画策定支援</h3>
+            <p class="activity-location">
+              <span class="material-icons">location_on</span>
+              複数地域
+            </p>
+            <p class="activity-description">
+              市町村・森林組合と連携し、森林経営計画の策定支援を行いました。
+            </p>
+          </div>
+        </article>
+
+      </div>
+
+      <div class="activity-note">
+        <span class="material-icons">info</span>
+        <p>詳細な稼働状況やご依頼の可否については、<a href="contact.html">お問い合わせフォーム</a>よりご連絡ください。</p>
       </div>
     </div>
   </section>
