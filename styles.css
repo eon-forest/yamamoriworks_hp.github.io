@@ -1095,6 +1095,21 @@ a {
   line-height: 1.8;
 }
 
+.footer-address {
+  display: flex;
+  align-items: flex-start;
+  gap: 0.25rem;
+  font-size: 0.85rem;
+  color: var(--color-text-muted);
+  margin-top: 1rem;
+}
+
+.footer-address .material-icons {
+  font-size: 1rem;
+  color: var(--color-forest-green);
+  flex-shrink: 0;
+}
+
 .footer-links {
   display: flex;
   gap: 4rem;
